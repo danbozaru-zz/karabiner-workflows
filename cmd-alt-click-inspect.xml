@@ -11,10 +11,10 @@
     __KeyToKey__
 
     <!-- from -->
-    PointingButton::LEFT, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L,
+    PointingButton::LEFT, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L,
 
     <!-- to -->
-    KeyCode::VK_NONE, PointingButton::RIGHT,
+    PointingButton::RIGHT
 
     @begin
     Option::KEYTOKEY_DELAYED_ACTION,
@@ -26,9 +26,9 @@
     KeyCode::C,
     KeyCode::T,
     Option::KEYTOKEY_DELAYED_ACTION_MILLISECONDS,
-    Millisecond::RawValue::100,
+    Millisecond::RawValue::100
     @end
 
-    KeyCode::RETURN,
+    KeyCode::RETURN
   </autogen>
 </item>
