@@ -1,0 +1,34 @@
+<!-- place in <root> of private.xml -->
+<appdef>
+  <appname>GOOGLE_CHROME</appname>
+  <equal>com.google.Chrome</equal>
+</appdef>
+<item>
+  <name>Command+Alt+Click to Inspect Element in Chrome</name>
+  <only>GOOGLE_CHROME</only>
+  <identifier>ohdeerdog.karabiner.clickinspect</identifier>
+  <autogen>
+    __KeyToKey__
+
+    <!-- from -->
+    PointingButton::LEFT, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L,
+
+    <!-- to -->
+    KeyCode::VK_NONE, PointingButton::RIGHT,
+
+    @begin
+    Option::KEYTOKEY_DELAYED_ACTION,
+    KeyCode::I,
+    KeyCode::N,
+    KeyCode::S,
+    KeyCode::P,
+    KeyCode::E,
+    KeyCode::C,
+    KeyCode::T,
+    Option::KEYTOKEY_DELAYED_ACTION_MILLISECONDS,
+    Millisecond::RawValue::100,
+    @end
+
+    KeyCode::RETURN,
+  </autogen>
+</item>
